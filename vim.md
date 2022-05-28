@@ -66,7 +66,7 @@ m <キー>
 ```
 
 - vimgrep
-:cd, :lcdで移動してからvimgrepをかける
+:cd, :lcdで移動してからvimgrepをかける  
 https://blog.onk164.net/archives/517.html
 
 ## gvim
