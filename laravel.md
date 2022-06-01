@@ -57,6 +57,13 @@ php artisan migrate:refresh --seed
 composer dump-autoload
 ```
 
+- ログ出力
+```
+Log::info('文字列');
+Log::info(print_r($var, true));
+※$varは非文字列
+```
+
 - トランザクションの張り方(手動)
   - トランザクション開始
 ここからDBの処理が始まる
@@ -74,12 +81,4 @@ try-catchのcatchにロールバックを入れることで、
 何らかのエラーが発生した場合、DBの処理をなかったことにする
 ```
 DB::rollback();
-```
-
-
-- ログ出力
-```
-Log::info('文字列');
-Log::info(print_r($var, true));
-※$varは非文字列
 ```
