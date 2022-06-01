@@ -78,6 +78,7 @@ try-catchのcatchにロールバックを入れることで、
 DB::rollback();
 ```
 
+
 - ログ出力
 ```
 Log::info('文字列');
