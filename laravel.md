@@ -77,3 +77,10 @@ try-catchのcatchにロールバックを入れることで、
 ```
 DB::rollback();
 ```
+
+- ログ出力
+```
+Log::info('文字列');
+Log::info(print_r($var, true));
+※$varは非文字列
+```
