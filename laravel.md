@@ -63,13 +63,11 @@ composer dump-autoload
 ```
 DB::beginTransaction();
 ```
-
   - コミット
 ここまでの処理をデータベースに反映
 ```
 DB::commit();
 ```
-
   - ロールバック
 処理を元に戻す
 try-catchのcatchにロールバックを入れることで、
