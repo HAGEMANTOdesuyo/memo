@@ -69,20 +69,20 @@ Log::info(print_r($var, true));
 
   - トランザクション開始  
     ここからDBの処理が始まる
-```
-DB::beginTransaction();
-```
+    ```
+    DB::beginTransaction();
+    ```
 
   - コミット  
     ここまでの処理をデータベースに反映
-```
-DB::commit();
-```
+    ```
+    DB::commit();
+    ```
 
   - ロールバック  
     処理を元に戻す
     try-catchのcatchにロールバックを入れることで、
     何らかのエラーが発生した場合、DBの処理をなかったことにする
-```
-DB::rollback();
-```
+    ```
+    DB::rollback();
+    ```
