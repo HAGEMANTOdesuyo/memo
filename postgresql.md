@@ -77,3 +77,9 @@ select setval('sales_infos_id_seq',200);
 select currval('sales_infos_id_seq');
 ```
 https://www.postgresql.jp/document/8.0/html/functions-sequence.html
+
+## 検索
+- 大文字小文字区別せずに部分一致検索
+```
+select * from テーブル名 where カラム名 ILIKE '%キーワード%';
+```
