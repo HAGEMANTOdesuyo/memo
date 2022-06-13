@@ -83,3 +83,7 @@ https://www.postgresql.jp/document/8.0/html/functions-sequence.html
 ```
 select * from テーブル名 where カラム名 ILIKE '%キーワード%';
 ```
+- 大文字小文字区別せずに部分一致検索&id降順&表示件数1  
+```
+select * from テーブル名 where カラム名 ILIKE '%キーワード%' order by id desc limit 1;
+```
