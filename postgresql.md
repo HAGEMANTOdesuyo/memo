@@ -87,3 +87,15 @@ select * from テーブル名 where カラム名 ILIKE '%キーワード%';
 ```
 select * from テーブル名 where カラム名 ILIKE '%キーワード%' order by id desc limit 1;
 ```
+
+## sqlファイル実行
+- DBログイン後SQLファイルを実行
+```
+$ psql -U user_name -d db_name (-h ホスト名) にてDBにログイン
+$ postgres=> \i ../dump_in.sql
+```
+
+- DBに一時的にログインしSQLファイルを実行
+```
+$ psql -f ../dump_in.sql -U user_name -d db_name (-h ホスト名)
+```
